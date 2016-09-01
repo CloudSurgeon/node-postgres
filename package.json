@@ -16,7 +16,7 @@
     "xmldom" : "*",
     "q" : "*",
     "express-error-handler": "*",
-    "pg": "*",
+    "pg": "*"
   },
   "devDependencies": {},
   "scripts": {
