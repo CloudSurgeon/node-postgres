@@ -4,7 +4,7 @@ module.exports = {
       
         //You can run command "heroku config" to see what is Database URL from Heroku belt
       
-        var conString = process.env.DATABASE_URL || "postgres://delphixdb:delphixdb@localhost:5432/postgres";
+        var conString = "postgres://delphixdb:delphixdb@localhost:5432/postgres";
         var client = new pg.Client(conString);
 
         client.connect();
@@ -27,7 +27,7 @@ module.exports = {
     addRecord : function(req, res){
         var pg = require('pg');  
         
-        var conString = process.env.DATABASE_URL ||  "postgres://delphixdb:delphixdb@localhost:5432/postgres";
+        var conString =  "postgres://delphixdb:delphixdb@localhost:5432/postgres";
         var client = new pg.Client(conString);
 
         client.connect();
@@ -46,7 +46,7 @@ module.exports = {
      delRecord : function(req, res){
         var pg = require('pg');   
         
-        var conString = process.env.DATABASE_URL ||  "postgres://delphixdb:delphixdb@localhost:5432/postgres";
+        var conString =  "postgres://delphixdb:delphixdb@localhost:5432/postgres";
         var client = new pg.Client(conString);
 
         client.connect();
@@ -64,7 +64,7 @@ module.exports = {
     createTable : function(req, res){
         var pg = require('pg');   
         
-        var conString = process.env.DATABASE_URL ||  "postgres://delphixdb:delphixdb@localhost:5432/postgres";
+        var conString =  "postgres://delphixdb:delphixdb@localhost:5432/postgres";
         var client = new pg.Client(conString);
 
         client.connect();
@@ -89,7 +89,7 @@ module.exports = {
     dropTable : function(req, res){
         var pg = require('pg');   
         
-        var conString = process.env.DATABASE_URL || "postgres://delphixdb:delphixdb@localhost:5432/postgres";
+        var conString = "postgres://delphixdb:delphixdb@localhost:5432/postgres";
         var client = new pg.Client(conString);
 
         client.connect();
