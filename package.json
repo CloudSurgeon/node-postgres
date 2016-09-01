@@ -14,8 +14,9 @@
     "jade": "*",
     "jaydata" : "*",
     "xmldom" : "*",
-    "q" : "*"
-      
+    "q" : "*",
+    "express-error-handler": "*",
+    "pg": "*",
   },
   "devDependencies": {},
   "scripts": {
